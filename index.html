@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur Monnaie</title>
+</head>
+
+<body style="background-color: rgb(185, 158, 181);text-align: center;">
+    <h1 style="color: rgb(61, 61, 182);">
+        Convertisseur Monnaie
+    </h1>
+    <form>
+        <label for="montant">Entrer un montant</label>
+        <input type="number" id="montant" placeholder="votre montant"><br><br>
+        <label for="deviseSource"> Devise source</label>
+        <select name="devise" id="deviseSource">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="MAD">MAD</option>
+        </select><br><br>
+        <label for="deviseCible">Devise cible</label>
+        <select name="devise" id="deviseCible">
+            <option value="MAD">MAD</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select> <br><br>
+        <input type="button" value="Convertir"
+            style="color: rgb(59, 49, 69);background-color: rgb(225, 166, 235); text-align: center;"
+            onclick="Convertir()">
+
+
+    </form> <br>
+    <div id="resultat"> .... </div>
+    <script src="scripte.js">
+
+    </script>
+</body>
+
+</html>
